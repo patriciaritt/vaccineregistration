@@ -1,0 +1,13 @@
+{
+  "vaccinedata": [
+    {"id": "0", "date":  "01-01-2022", "time": "13:00", "name":  "Hans Gruber", "place":  "Waidhofen/Ybbs", "adress":  "Plenkerstraße 10", "possibleRegistrations":  "25", "registrations":  "4"},
+    {"id": "1", "date":  "01-01-2022", "time": "13:15", "name":  "Bernadette Plank", "place":  "Waidhofen/Ybbs", "adress":  "Plenkerstraße 10", "possibleRegistrations":  "25", "registrations":  "4"},
+    {"id": "2", "date":  "01-01-2022", "time": "13:30", "name":  "Susie Schiffner", "place":  "Waidhofen/Ybbs", "adress":  "Plenkerstraße 10", "possibleRegistrations":  "25", "registrations":  "4"},
+    {"id": "3", "date":  "01-01-2022", "time": "13:45", "name":  "Hubert Goisern", "place":  "Waidhofen/Ybbs", "adress":  "Plenkerstraße 10", "possibleRegistrations":  "25", "registrations":  "4"},
+    {"id": "4", "date":  "02-01-2022", "time": "13:00", "name":  "Lukas Plöchl", "place":  "Amstetten", "adress":  "Wienerstraße 12", "possibleRegistrations":  "45", "registrations":  "4"},
+    {"id": "5", "date":  "02-01-2022", "time": "13:15", "name":  "Wolfgang Mozart", "place":  "Amstetten", "adress":  "Wienerstraße 12", "possibleRegistrations":  "45", "registrations":  "4"},
+    {"id": "6", "date":  "02-01-2022", "time": "13:30", "name":  "Maria Magdalena", "place":  "Amstetten", "adress":  "Wienerstraße 12", "possibleRegistrations":  "45", "registrations":  "4"},
+    {"id": "7", "date":  "02-01-2022", "time": "13:45", "name":  "Sepp Forcher", "place":  "Amstetten", "adress":  "Wienerstraße 12", "possibleRegistrations":  "45", "registrations":  "4"},
+    {"id": "8", "date":  "02-01-2022", "time": "14:00", "name":  "Conchie Wurst", "place":  "Amstetten", "adress":  "Wienerstraße 12", "possibleRegistrations":  "45", "registrations":  "4"}
+  ]
+}

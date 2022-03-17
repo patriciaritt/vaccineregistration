@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="de">
+<head>
+
+    <title>Oesterreich Impft</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Font and CSS Stylesheet-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <!-----------------------------Navbar--------------------------------->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="assets/logo.png" alt="" width="100" height="50" class="d-inline-block align-text-top">
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Impftermin buchen</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Administrator Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Datenschutz</a>
+            </li>
+        </ul>
+    </nav>
+    <!----------Grid mit Websitebeschreibung und Stimmungsbilder---------->
+    <div class="row">
+        <div class="col">
+            <h1>Gemeinsam gegen <br>Corona – jetzt <br>Schutzimpfung <br>holen!</h1>
+        </div>
+        <div class="col">
+            <!--------------Slider mit Stimmungsbilder------------------->
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/stimmungsbild1.png" id="pic1" class="d-block" alt="stimmungsbild" height="370">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/stimmungsbild2.png" id="pic2" class="d-block" alt="stimmungsbild" height="370">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/stimmungsbild3.png" id="pic3" class="d-block" alt="stimmungsbild" height="370">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------Impftermine------------------------------------->
+    <h2>Verwaltung Impftermine</h2>
+
+    <!--------------------- Button Impftermin erstellen ------------------------->
+    <button type="button" class="btn btn-success btn-lg btn-block" id="createVacdate">Neuen Impftermin erstellen</button>
+
+    <!---------------- Formular zum Erstellen eines Impftermins ------------------->
+    <div id="createNewVaccinedate">
+        <p>Hier können sie einen neuen Impftermin erstellen. Füllen Sie alle Felder aus und klicken Sie auf "Speichern".
+            Möchten Sie den Vorgang abbrechen, klicken Sie auf "Abbrechen".<br><br>Wenn Sie einen Termin erstellen, den es schon in der Liste gibt, wird er zur entsprechenden Liste hinzugefügt.<br><br>Gibt es diesen Impftermin noch nicht, wird automatisch ein neuer Impftag erstellt. In diesem Fall ist die Angabe einer maximal möglichen Anmeldeanzahl erforderlich. Diese erfolgt im Feld "Mögliche Anmeldungen".
+        <form id="formNewVaccinedate">
+            <div class="form-group">
+                <label for="fdate">Datum</label>
+                <input type="date" name="fdate" class="form-control" id="fdate">
+            </div>
+            <div class="form-group">
+                <label for="ftime">Uhrzeit</label>
+                <input type="time" name="ftime" class="form-control" id="ftime" placeholder="Uhrzeit">
+            </div>
+            <div class="form-group">
+                <label for="flocation">Ort</label>
+                <input type="text" name="flocation" class="form-control" id="flocation">
+            </div>
+            <div class="form-group">
+                <label for="fadress">Adresse</label>
+                <input type="text" name="fadress" class="form-control" id="fadress">
+            </div>
+            <div class="form-group">
+                <label for="fregistrations">Mögliche Anmeldungen</label>
+                <input type="text" name="fregistrations" class="form-control" id="fregistrations">
+            </div>
+            <button type="button" class="btn btn-success btn-lg btn-block" id="safeCreation">Speichern</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block" id="cancelCreation">Abbrechen</button>
+        </form>
+    </div>
+
+    <span id="emptyspace"></span>
+
+</div>
+
+
+<!---------------------Footer-------------------------->
+<footer>
+    <nav class="navbar navbar-expand-sm justify-content-center">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="index.html">Impftermin buchen</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="index2.html">Administrator Login
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Datenschutz</a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>

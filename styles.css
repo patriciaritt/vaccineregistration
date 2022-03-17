@@ -1,0 +1,102 @@
+body{
+    font-family: 'Open Sans', sans-serif !important;
+    background-color: #F5F1EB !important;
+}
+
+.accordion-header, .accordion-button{
+    background-color: #AFD3C6 !important;
+}
+
+.accordion-button:hover{
+    font-weight: bold;
+}
+
+
+h1{
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    margin-left: 10%;
+}
+
+#pic1, #pic2, #pic3{
+    margin-left: 10%;
+}
+
+h2{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.col, .form-control{
+    margin-bottom: 1rem;
+}
+
+#createVacdate{
+    margin-top: 1em !important;
+    margin-bottom: 3em !important;
+}
+
+#createNewVaccinedate{
+    margin-top: 1em !important;
+    margin-bottom: 3em !important;
+    width: 50% !important;
+}
+
+/** TODO Animation 1**/
+.accordion-item {
+    animation-name: slide-up; /*name soll sinnvoll sein*/
+    animation-duration: 2s;
+}
+
+/*keyframe definieren*/
+@keyframes slide-up {
+    0%{
+        margin-top: 100vh;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+
+/** TODO Animation 2**/
+h1{
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+nav{
+    background-color: #F5F1EB !important;
+}
+
+nav a:hover{
+    color: darkred !important;
+}
+
+@media(max-width: 1200px){
+    #pic1, #pic2, #pic3{
+        height: 270px;
+    }
+}
+
+@media(max-width: 720px){
+    #pic1, #pic2, #pic3{
+        margin-top: 3rem;
+        height: 195px;
+    }
+}
+
+@media(max-width: 370px){
+    #pic1, #pic2, #pic3{
+        height: 170px;
+    }
+}
+
